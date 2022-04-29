@@ -5,8 +5,7 @@
 #include <string>
 using namespace std;
 
-double BitFlipProb::BitFlopProb()
+BitFlipProb::BitFlipProb(double t)
 {
-    p=0.5;
-    return p;
+    p=t;
 };
