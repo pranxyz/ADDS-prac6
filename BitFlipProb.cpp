@@ -4,7 +4,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
-Individual* BitFlipProb::mutate(Individual* list, int k){
+
+double BitFlipProb::BitFlopProb()
+{
     p=0.5;
-    return list;
-}
+    return p;
+};
