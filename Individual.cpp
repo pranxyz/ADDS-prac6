@@ -3,6 +3,14 @@
 #include "Individual.h"
 using namespace std;
 
+Individual::Individual(int k)
+{
+    for (int i = 0; i < k; i++)
+    {
+        binaryString += '0';
+    }
+}
+
 Individual::Individual (string bin_str)
 {
     length=bin_str.size();
@@ -10,7 +18,7 @@ Individual::Individual (string bin_str)
     {
         copyOfList[i]='0';
     }
-    binaryString=bin_str;
+    binaryString = bin_str;
 }
 
 string Individual::getString()
