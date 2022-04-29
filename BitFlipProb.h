@@ -8,7 +8,7 @@
 class BitFlipProb : public Mutator
 {
     public:
-    double BitFlopProb();
+    BitFlipProb(double);
     private:
     double p;
 };
