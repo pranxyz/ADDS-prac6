@@ -5,13 +5,8 @@
 
 class Individual
 {
-    private:
-    std::string binaryString;
-    int length;
-    std::string copyOfList;
-    std::string rearrange_binaryString;
-
     public:
+    Individual(int);
     Individual (std::string bin_str);
     std::string getString();
     int getBit(int pos);
@@ -19,6 +14,11 @@ class Individual
     int getMaxOnes();
     int getLength();
     void rearrangeBit(int pos);
+    private:
+    std::string binaryString;
+    int length;
+    std::string copyOfList;
+    std::string rearrange_binaryString;
 };
 
 #endif
